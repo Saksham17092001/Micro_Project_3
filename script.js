@@ -7,10 +7,11 @@ btn.addEventListener("click", (e) => {
     string = eval(string);
     display.innerHTML = string;
     } 
-    else if (e.target.innerHTML == "RESET") {
+    else if (e.target.innerHTML === "RESET") {
+    string = '';
     display.innerHTML = '0';
     } 
-    else if (e.target.innerHTML == "DEL") {
+    else if (e.target.innerHTML === "DEL") {
     string = string.slice(0, -1) || '0';
     display.innerHTML = string;
     } 
