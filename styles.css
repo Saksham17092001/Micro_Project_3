@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3B4664;
+}
+
+.calculator {
+    padding: 20px;
+    border: none;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 800;
+
+}
+
+.display {
+    background-color: #181F32;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #252D44;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    
+}
+
+.btn {
+    background-color: #EAE3DB;
+    color: #3B4664;
+    font-size: 1.5rem;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+
+.reset {
+    background-color: #647299;
+    grid-column: span 2;
+}
+
+.equal {
+    background-color: #D13F30;
+    grid-column: span 2;
+}
+.delete{
+    background-color:  #647299;
+}
+
+.reset , .equal , .delete{
+    color: white;
+}
+
